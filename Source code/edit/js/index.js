@@ -1,5 +1,5 @@
 // Slider 
-const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
+    const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
     const imgContainer = document.querySelector(".aspect-ratio-169");
     const dotItem = document.querySelectorAll(".dot")
     let imgNuber = imgPosition.length
@@ -27,7 +27,13 @@ const imgPosition = document.querySelectorAll(".aspect-ratio-169 img");
     }
     setInterval(imgSlide, 5000)
 
+// click img product
+    const bigImg = document.querySelector(".product-content-bigimg img")
+    const smalImg = document.querySelectorAll(".product-content-smallimg img")
+    smalImg.forEach(function(imgItem,X){ //duyệt các phần tử là các ảnh có đường dẫn src
+        imgItem.addEventListener("click", function(){
+        bigImg.src = imgItem.src //khi click vào ảnh nhỏ nó sẽ dẫn đến ảnh to
+        })
+    })
 
-
-    
 
