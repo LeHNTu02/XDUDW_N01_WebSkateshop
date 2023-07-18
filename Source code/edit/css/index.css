@@ -280,9 +280,9 @@
         margin: auto;
     }
 
-    .box-item{
+    .box-item {
         width: 150px;
-        height: 30px;
+        height: 25px;
         text-align: center;
         margin: auto;
         border: 2px solid;
@@ -290,6 +290,25 @@
         color: black;
         margin-bottom: 20px;
         margin-top: 20px;
+        background-color: transparent;
+        transition: all 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .box-item a {
+        color: black;
+    }
+    
+    .box-item:hover {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .box-item:hover a {
+        color: white;
     }
     
     /* product-item */
